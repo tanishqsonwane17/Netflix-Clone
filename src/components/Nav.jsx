@@ -3,7 +3,6 @@ import React from "react";
 const Nav = () => {
   return (
     <div className="px-8 py-6 flex items-center justify-between">
-      {/* Logo */}
       <div className="h-8">
         <img
           className="h-full"
@@ -12,7 +11,6 @@ const Nav = () => {
         />
       </div>
 
-      {/* Buttons */}
       <div className="flex gap-4">
         <button className="px-6 py-1 border border-gray-400 rounded-md text-white">
           a
