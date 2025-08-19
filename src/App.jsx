@@ -1,13 +1,24 @@
-import React from 'react'
-import { Routes,Route } from 'react-router'
-import Nav from './components/Nav'
-import Main from './screens/Main'
-const App = () => {
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import MovieRow from "./components/MovieRow";
+import Footer from "./components/Footer";
+
+function App() {
   return (
-    <>
-    <Main/>
-    </>
-  )
+    <div className="bg-black text-white min-h-screen">
+      <Navbar />
+      <Banner />
+
+      <div className="space-y-8 mt-4">
+        <MovieRow title="Trending Now" />
+        <MovieRow title="Top Rated" />
+        <MovieRow title="Action Movies" />
+        <MovieRow title="Comedy Movies" />
+      </div>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
